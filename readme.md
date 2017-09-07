@@ -10,15 +10,14 @@
 # set aws account password policy
 module "password_policy" {
   source = "github.com/ellerbrock/tf-aws-password-policy"
-
-  # default values
-
-  # minimum_password_length        = "40"
-  # require_lowercase_characters   = "true"
-  # require_numbers                = "true"
-  # require_uppercase_characters   = "true"
-  # require_symbols                = "true"
-  # allow_users_to_change_password = "true"
+  
+  password_policy_lenght         = "40"
+  password_policy_lowercase      = "true"
+  password_policy_numbers        = "true"
+  password_policy_numbers        = "true"
+  password_policy_uppercase      = "true"
+  password_policy_symbols        = "true"
+  password_policy_allow_change   = "true"
 }
 ```
 
