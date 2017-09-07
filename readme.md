@@ -1,14 +1,15 @@
-![Terraform AWS Password Policy](https://github.frapsoft.com/top/open-source-v1.png)
+![Terraform AWS Password Policy Module](https://github.frapsoft.com/top/open-source-v1.png)
 
-# Terraform AWS Password Policy
+# Terraform AWS Password Policy Module
 
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg)](https://github.com/ellerbrock/open-source-badges/) [![Gitter Chat](https://badges.gitter.im/frapsoft/frapsoft.svg)](https://gitter.im/frapsoft/frapsoft/) [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
-## Usage
+
+## Example Usage
 
 ```
 # set aws account password policy
 module "password_policy" {
-  source = "git::ssh://git@github.com/ellerbrock/terraform-aws-password-policy.git"
+  source = "github.com/ellerbrock/tf-aws-password-policy"
 
   # default values
 
@@ -20,6 +21,7 @@ module "password_policy" {
   # allow_users_to_change_password = "true"
 }
 ```
+
 
 ## Contact
 
