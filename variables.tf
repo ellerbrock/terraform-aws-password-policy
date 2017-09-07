@@ -1,30 +1,29 @@
-# password policy
-variable "password_policy_lenght" {
-  default     = "40"
+variable "lenght" {
   description = "pasword lenght"
+  default     = "6"
 }
 
-variable "password_policy_lowercase" {
-  default     = "true"
+variable "lowercase" {
   description = "must contain letters in lowercase"
+  default     = "false"
 }
 
-variable "password_policy_numbers" {
-  default     = "true"
+variable "numbers" {
   description = "must contain a number"
+  default     = "false"
 }
 
-variable "password_policy_uppercase" {
-  default     = "true"
+variable "uppercase" {
   description = "must contain a letter in uppercase"
+  default     = "false"
 }
 
-variable "password_policy_symbols" {
-  default     = "true"
+variable "symbols" {
   description = "must contain a symbol"
+  default     = "false"
 }
 
-variable "password_policy_allow_change" {
-  default     = "true"
+variable "user_allow_change" {
   description = "allow user to change his password"
+  default     = "false"
 }

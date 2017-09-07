@@ -11,14 +11,13 @@
 module "password_policy" {
   source = "github.com/ellerbrock/tf-aws-password-policy"
 
-  # default values
-
-  # minimum_password_length        = "40"
-  # require_lowercase_characters   = "true"
-  # require_numbers                = "true"
-  # require_uppercase_characters   = "true"
-  # require_symbols                = "true"
-  # allow_users_to_change_password = "true"
+  lenght            = "40"
+  lowercase         = "true"
+  numbers           = "true"
+  numbers           = "true"
+  uppercase         = "true"
+  symbols           = "true"
+  user_allow_change = "true"
 }
 ```
 
